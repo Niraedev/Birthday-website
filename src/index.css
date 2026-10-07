@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #fdfbf7;
+    background-color: #1f1917;
+  }
+  
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Custom romantic scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1917;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c86d51;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Soft glowing border utility */
+.glow-border-amber {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+.glow-border-terracotta {
+  box-shadow: 0 0 20px rgba(200, 109, 81, 0.35), inset 0 0 10px rgba(200, 109, 81, 0.15);
+}
+
+/* Glassmorphism warm card effect */
+.glass-warm {
+  background: rgba(31, 25, 23, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glass-cream {
+  background: rgba(253, 251, 247, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 109, 81, 0.2);
+}
